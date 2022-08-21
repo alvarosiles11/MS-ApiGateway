@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alvaro\\Desktop\\ejemplo\\Api.Gateway\\Api.Gateway.csproj": {}
+    "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Api.Gateway\\Api.Gateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alvaro\\Desktop\\ejemplo\\Api.Gateway\\Api.Gateway.csproj": {
+    "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Api.Gateway\\Api.Gateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alvaro\\Desktop\\ejemplo\\Api.Gateway\\Api.Gateway.csproj",
+        "projectUniqueName": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Api.Gateway\\Api.Gateway.csproj",
         "projectName": "Api.Gateway",
-        "projectPath": "C:\\Users\\alvaro\\Desktop\\ejemplo\\Api.Gateway\\Api.Gateway.csproj",
+        "projectPath": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Api.Gateway\\Api.Gateway.csproj",
         "packagesPath": "C:\\Users\\alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alvaro\\Desktop\\ejemplo\\Api.Gateway\\obj\\",
+        "outputPath": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Api.Gateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",
