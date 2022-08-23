@@ -1,0 +1,41 @@
+{
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/api/alvaro",
+      "RouteKeys": ["usuarios", "potman"],
+      "Aggregator": "UsersPostAgregator"
+    }
+  ],
+
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/users",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "Key": "usuarios"
+    },
+    {
+      "UpstreamPathTemplate": "/api/posts",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "Key": "potman"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44372/"
+  }
+}
