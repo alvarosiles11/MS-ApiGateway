@@ -1,7 +1,7 @@
 {
   "Aggregates": [
     {
-      "UpstreamPathTemplate": "/api/alvaro",
+      "UpstreamPathTemplate": "/api/user-posts",
       "RouteKeys": ["usuarios", "potman"],
       "Aggregator": "UsersPostAgregator"
     }

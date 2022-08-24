@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Handlers"
+    "\\Aggregator"
   ],
-  "SelectedNode": "\\Handlers\\RemoveEncodingDelegatingHandler.cs",
+  "SelectedNode": "\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

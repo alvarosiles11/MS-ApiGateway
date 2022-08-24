@@ -84,3 +84,4 @@ C:\Users\alvaro\Desktop\ApiGateway\obj\Debug\net6.0\refint\ApiGateway.dll
 C:\Users\alvaro\Desktop\ApiGateway\obj\Debug\net6.0\ApiGateway.pdb
 C:\Users\alvaro\Desktop\ApiGateway\obj\Debug\net6.0\ApiGateway.genruntimeconfig.cache
 C:\Users\alvaro\Desktop\ApiGateway\obj\Debug\net6.0\ref\ApiGateway.dll
+C:\Users\alvaro\Desktop\ApiGateway\bin\Debug\net6.0\OcelotVuelo.json

@@ -20,7 +20,7 @@ namespace ApiGateway.Aggregator
         {
             if (responses.Any(x => x.Items.Errors().Count > 0))
             {
-                return new DownstreamResponse(null, HttpStatusCode.BadRequest, (List<Header>) null, null);
+                return new DownstreamResponse(null, HttpStatusCode.BadRequest, (List<Header>?) null, null);
             }
      
             var userResponseContent = await responses[0].Items.DownstreamResponse().Content.ReadAsStringAsync();
@@ -29,9 +29,11 @@ namespace ApiGateway.Aggregator
             var users = JsonConvert.DeserializeObject<List<User>>(userResponseContent);
             var posts = JsonConvert.DeserializeObject<List<Post>>(postResponseContent);
 
-          foreach (var user in users)
+    
+
+          foreach (var user in users!)
             {
-                var userPosts = posts.Where(p => p.UserId == user.Id).ToList();
+                var userPosts = posts!.Where(p => p.UserId == user.Id).ToList();
                 user.Posts.AddRange(userPosts);
             }
 
