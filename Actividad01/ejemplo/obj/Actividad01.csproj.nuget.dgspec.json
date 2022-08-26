@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\Actividad01.csproj": {}
+    "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\Actividad01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\Actividad01.csproj": {
+    "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\Actividad01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\Actividad01.csproj",
+        "projectUniqueName": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\Actividad01.csproj",
         "projectName": "Actividad01",
-        "projectPath": "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\Actividad01.csproj",
+        "projectPath": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\Actividad01.csproj",
         "packagesPath": "C:\\Users\\alvaro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\obj\\",
+        "outputPath": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alvaro\\AppData\\Roaming\\NuGet\\NuGet.Config",

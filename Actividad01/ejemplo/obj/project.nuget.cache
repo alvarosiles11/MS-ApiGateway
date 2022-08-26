@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Y9/aVy2ZJfOQ5lFym1/4b3T9A5ZDNo34Dvg9Ydtxkq08gkZcYI2zTsDwQbAnNRHGk6c29uAolHlx3ID/fox+w==",
+  "dgSpecHash": "8ARoLdQCMDQsrEBbcpr2ehGz8GPhz6vR79r+gZsCzmoJKFcr9+15Mb4tElYiMTZjqDxhPTt5LwX9VmQXIWdVrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alvaro\\Desktop\\aqui\\Actividad01\\ejemplo\\Actividad01.csproj",
+  "projectFilePath": "C:\\Users\\alvaro\\Documents\\GitHub\\ms-api-gateway\\Actividad01\\ejemplo\\Actividad01.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alvaro\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
     "C:\\Users\\alvaro\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.1\\microsoft.aspnetcore.jsonpatch.6.0.1.nupkg.sha512",
