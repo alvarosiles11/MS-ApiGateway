@@ -1,22 +1,4 @@
-# ms-api-gateway
-
-### 1.-archivo creo Api.Gateway
-
-cmd: dotnet new webapi -o Api.Gateway
-
-### 2.- dentro del proyecto Api.Gateway
-
-cmd: dotnet add package Ocelot --version 18.0.0
-
-### 3.- creo un archivo Ocelot.json en proyecto Api.Gateway
-
-### 4.- dentro del proyecto Api.Gateway
-
-cmd: dotnet add package Microsoft.EntityFrameworkCore.Tools --version 6.0.8
-
-### 5.- dentro del proyecto Api.Gateway
-
-cmd: dotnet run
+# MS Api Gateway
 
 ### URL al repositorio de código
 
@@ -26,22 +8,19 @@ https://github.com/alvarosiles11/ms-api-gateway
 
 https://actividad0120220826043355.azurewebsites.net/api/user-posts
 
-insomia
-
-![alt](/hola.png)
-
-
 web
-
-![alt](/captura.png)
+![alt](/src/imgs/captura001.png)
 
 insomia
+![alt](/src/imgs/captura002.png)
 
-![alt](/Insomnia.png)
 
-se uso
 
-!["alt"](https://lh3.googleusercontent.com/kAyuA6Uo8kCc8EQJNkvj0GHetWNpbwU9ssHPf0tKbDaVddJD3FebnaZM5boUoU4_WLOOlJEVxnLoQFhPg_WuGPSI=w128-h128-e365-rj-sc0x00ffffff)
-JSON Formatter
 
-https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+<p align="center">
+  Visitors count:<br>
+  <meta http-equiv="refresh" content="0.6">
+  <img src="https://profile-counter.glitch.me/alvarosiles11/count.svg" />
+</p>
+
+![Image text](https://raw.githubusercontent.com/alvarosiles11/alvarosiles11/output/github-contribution-grid-snake.svg)
