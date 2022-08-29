@@ -106,3 +106,10 @@ C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\obj\Debug\ne
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\obj\Debug\net6.0\Actividad01.pdb
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\obj\Debug\net6.0\Actividad01.genruntimeconfig.cache
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\obj\Debug\net6.0\ref\Actividad01.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

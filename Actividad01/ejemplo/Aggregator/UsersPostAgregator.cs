@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Net;
 using System.Net.Http.Headers;
-using System.Threading.Tasks;
 using ejemplo.Dto;
-using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Ocelot.Middleware;
 using Ocelot.Multiplexer;
@@ -22,16 +16,16 @@ namespace ejemplo.Aggregator
             {
                 return new DownstreamResponse(null, HttpStatusCode.BadRequest, null as List<Header>, null);
             }
-     
+
             var userResponseContent = await responses[0].Items.DownstreamResponse().Content.ReadAsStringAsync();
             var postResponseContent = await responses[1].Items.DownstreamResponse().Content.ReadAsStringAsync();
 
             var users = JsonConvert.DeserializeObject<List<User>?>(userResponseContent);
             var posts = JsonConvert.DeserializeObject<List<Post>?>(postResponseContent);
 
-    
 
-          foreach (var user in users!)
+
+            foreach (var user in users!)
             {
                 var userPosts = posts?.Where(p => p.UserId == user.Id).ToList();
                 user.Posts?.AddRange(userPosts!);

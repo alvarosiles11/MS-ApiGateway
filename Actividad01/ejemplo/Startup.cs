@@ -16,7 +16,8 @@ using ejemplo.Aggregator;
 using ejemplo.Handlers;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace ejemplo
 {
@@ -31,12 +32,26 @@ namespace ejemplo
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+               .AddJwtBearer(options =>
+               {
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateIssuerSigningKey = true,
+                       ValidateIssuer = false,
+                       ValidateAudience = false,
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("MyAnonymousAndSecuredSecretKey")),
+                       ClockSkew = new System.TimeSpan(0)
+                   };
+               });
+
             services.AddOcelot()
                .AddDelegatingHandler<RemoveEncodingDelegatingHandler>(true)
                .AddSingletonDefinedAggregator<UsersPostAgregator>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseAuthentication();
             app.UseOcelot().Wait();
         }
     }
