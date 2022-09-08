@@ -8,7 +8,7 @@
   ],
   "Routes": [
     {
-      "UpstreamPathTemplate": "/api/users",
+      "UpstreamPathTemplate": "/api/getUsers",
       "UpstreamHttpMethod": [],
       "DownstreamPathTemplate": "/users",
       "DownstreamScheme": "https",
@@ -22,7 +22,7 @@
     
     },
     {
-      "UpstreamPathTemplate": "/api/userstest",
+      "UpstreamPathTemplate": "/api/users",
       "UpstreamHttpMethod": [],
       "DownstreamPathTemplate": "/users",
       "DownstreamScheme": "https",
@@ -32,12 +32,25 @@
           "Port": 443
         }
       ],
-       "AuthenticationOptions": {
+      "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer"
       },
       "RouteClaimsRequirement": {
-        "userType": "admin"
+        "userType": "user"
       }
+    },
+    {
+      "UpstreamPathTemplate": "/api/getPosts",
+      "UpstreamHttpMethod": [],
+      "DownstreamPathTemplate": "/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "Key": "key002"
     },
     {
       "UpstreamPathTemplate": "/api/posts",
@@ -50,13 +63,19 @@
           "Port": 443
         }
       ],
-      "Key": "key002",
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
         "Period": "3s",
         "PeriodTimespan": 5,
         "Limit": 3
+      },
+
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "userType": "admin"
       }
     }
   ],

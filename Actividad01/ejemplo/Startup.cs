@@ -40,7 +40,7 @@ namespace ejemplo
                        ValidateIssuerSigningKey = true,
                        ValidateIssuer = false,
                        ValidateAudience = false,
-                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("MyAnonymousAndSecuredSecretKey")),
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("alvaro_siles_estrada_llave_secret")),
                        ClockSkew = new System.TimeSpan(0)
                    };
                });
