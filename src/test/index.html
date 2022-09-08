@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const tripulacion = [
+            [{
+                key: "trip111111",
+                tripulacion: [{
+                    cargo: "piloto",
+                    nombre: "Andres"
+                }, {
+                    cargo: "co-piloto",
+                    nombre: "Antonio"
+                }, {
+                    cargo: "asistente",
+                    nombre: "Alejandra"
+                },
+                {
+                    cargo: "auxiliar",
+                    nombre: "Alexandra"
+                }]
+            }]
+            ,
+            [{
+                key: "trip222222",
+                tripulacion: [{
+                    cargo: "piloto",
+                    nombre: "carlo"
+                }, {
+                    cargo: "co-piloto",
+                    nombre: "Antonio"
+                }, {
+                    cargo: "asistente",
+                    nombre: "Alejandra"
+                },
+                {
+                    cargo: "auxiliar",
+                    nombre: "Alexandra"
+                }]
+            }]
+            ,
+            [{
+                key: "trip333333",
+                tripulacion: [{
+                    cargo: "piloto",
+                    nombre: "Daniel"
+                }, {
+                    cargo: "co-piloto",
+                    nombre: "Antonio"
+                }, {
+                    cargo: "asistente",
+                    nombre: "Alejandra"
+                },
+                {
+                    cargo: "auxiliar",
+                    nombre: "Alexandra"
+                }]
+            }]
+            ,
+            [{
+                key: "trip44444",
+                tripulacion: [{
+                    cargo: "piloto",
+                    nombre: "Enrique"
+                }, {
+                    cargo: "co-piloto",
+                    nombre: "Antonio"
+                }, {
+                    cargo: "asistente",
+                    nombre: "Alejandra"
+                },
+                {
+                    cargo: "auxiliar",
+                    nombre: "Alexandra"
+                }]
+            }]
+
+        ]
+
+        const aeronave = [
+            {
+                keyAeronave: "ae153453",
+                descripcion: "hercules-1884",
+
+                asiento: [{
+                    codigo: "A1",
+                    keyAsiento: 1,
+                    descripcion: "ventana",
+                    sector: "comercial",
+                    precio: 250
+
+                },
+                {
+                    codigo: "A2",
+                    keyAsiento: 2,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+
+                },
+                {
+                    codigo: "A3",
+                    keyAsiento: 3,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A4",
+                    keyAsiento: 4,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A5",
+                    keyAsiento: 5,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A6",
+                    keyAsiento: 6,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A7",
+                    keyAsiento: 7,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A8",
+                    keyAsiento: 8,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A9",
+                    keyAsiento: 9,
+                    descripcion: "ventana",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A10",
+                    keyAsiento: 10,
+                    descripcion: "ventana",
+                    sector: "vip",
+                    precio: 350
+                },
+                {
+                    codigo: "A11",
+                    keyAsiento: 11,
+                    descripcion: "fila",
+                    sector: "vip",
+                    precio: 350
+                },
+                {
+                    codigo: "A12",
+                    keyAsiento: 12,
+                    descripcion: "pasillo",
+                    sector: "vip",
+                    precio: 350
+                }]
+
+            },
+            {
+                keyAeronave: "ae22222",
+                descripcion: "zeus-1994",
+
+                asiento: [{
+                    nro: 1,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 2,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 3,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 4,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 5,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 6,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 7,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 8,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 9,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 10,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 11,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 12,
+                    descripcion: "fila 3"
+                }]
+
+            },
+            {
+                keyAeronave: "ae333333",
+                descripcion: "tekken-2000",
+
+                asiento: [{
+                    nro: 1,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 2,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 3,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 4,
+                    descripcion: "fila 1"
+                },
+                {
+                    nro: 5,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 6,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 7,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 8,
+                    descripcion: "fila 2"
+                },
+                {
+                    nro: 9,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 10,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 11,
+                    descripcion: "fila 3"
+                },
+                {
+                    nro: 12,
+                    descripcion: "fila 3"
+                }]
+
+            },
+        ]
+
+        var hoy = new Date();
+        var fecha = hoy.getDate() + '-' + ( hoy.getMonth() + 1 ) + '-' + hoy.getFullYear();
+        var hora = hoy.getHours() + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
+        var hora1 = hoy.getHours()+1 + ':' + hoy.getMinutes() + ':' + hoy.getSeconds();
+
+        const vuelos = [
+            {
+                key: "v1513256",
+                numero_vuelo: "123",
+
+                aer_origen:"Vi-Vi",
+                aer_destino:"CBA",
+
+                fecha_salida:fecha,
+                fecha_llegada:fecha,
+
+                hora_salida:hora,
+                hora_llegada:hora1,
+                
+                aeronave_key:"ae153453",
+
+                estado:"abordando",
+                
+                descripcion: "hercules-1884",
+
+                asiento: [{
+                    codigo: "A1",
+                    keyAsiento: 1,
+                    descripcion: "ventana",
+                    sector: "comercial",
+                    precio: 250
+
+                },
+                {
+                    codigo: "A2",
+                    keyAsiento: 2,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+
+                },
+                {
+                    codigo: "A3",
+                    keyAsiento: 3,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A4",
+                    keyAsiento: 4,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A5",
+                    keyAsiento: 5,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A6",
+                    keyAsiento: 6,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A7",
+                    keyAsiento: 7,
+                    descripcion: "pasillo",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A8",
+                    keyAsiento: 8,
+                    descripcion: "fila",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A9",
+                    keyAsiento: 9,
+                    descripcion: "ventana",
+                    sector: "comercial",
+                    precio: 250
+                },
+                {
+                    codigo: "A10",
+                    keyAsiento: 10,
+                    descripcion: "ventana",
+                    sector: "vip",
+                    precio: 350
+                },
+                {
+                    codigo: "A11",
+                    keyAsiento: 11,
+                    descripcion: "fila",
+                    sector: "vip",
+                    precio: 350
+                },
+                {
+                    codigo: "A12",
+                    keyAsiento: 12,
+                    descripcion: "pasillo",
+                    sector: "vip",
+                    precio: 350
+                }]
+
+            }, 
+        ]
+
+
+        // console.log(tripulacion)
+        // console.log(aeronave)
+        console.log(vuelos)
+
+    </script>
+
+</body>
+
+</html>
