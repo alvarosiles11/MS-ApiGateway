@@ -125,3 +125,5 @@ C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\ne
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\out\out\appsettings.Development.json
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\out\out\appsettings.json
 C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\out\out\ocelot.json
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\App\obj\DotNet.Docker.csproj.nuget.dgspec.json
+C:\Users\alvaro\Documents\GitHub\ms-api-gateway\Actividad01\ejemplo\bin\Debug\net6.0\App\obj\project.assets.json
