@@ -37,4 +37,6 @@ docker images
 # █▀▀ █░░ █▀▀ ▄▀█ █▄░█   █▀▄ █▀█ █▄▀ █▀▀ █▀█
 # █▄▄ █▄▄ ██▄ █▀█ █░▀█   █▄▀ █▄█ █░█ ██▄ █▀▄
 # docker system prune -a
-l
+
+docker images
+docker ps -a
