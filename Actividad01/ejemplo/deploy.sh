@@ -15,7 +15,7 @@
 # Docker local
 docker build -t practico01-image -f Dockerfile .
 # docker run -d -p 5080:5080 --name practico01-contenedor practico01-image
-docker run -d -p 80:80 --name practico01-contenedor practico01-image
+docker run -d -p 5080:5080 --name practico01-contenedor practico01-image
 # publico quizas
 # docker container run -p 81:81 practico01-image
 docker images

@@ -24,7 +24,7 @@ namespace ejemplo
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseUrls("http://*:80");
+                    webBuilder.UseUrls("http://*:5080");
                     webBuilder.UseStartup<Startup>();
                 });
     }

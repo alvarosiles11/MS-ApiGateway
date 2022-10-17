@@ -30,8 +30,8 @@ docker ps -a
 # █ █▀▄▀█ ▄▀█ █▀▀ █▀▀ █▀
 # █ █░▀░█ █▀█ █▄█ ██▄ ▄█
 # Eliminar todas las imágenes de docker
-docker rmi $(docker images -q)
-docker images 
+# docker rmi $(docker images -q)
+# docker images 
 
 
 # █▀▀ █░░ █▀▀ ▄▀█ █▄░█   █▀▄ █▀█ █▄▀ █▀▀ █▀█
